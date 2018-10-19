@@ -18,10 +18,12 @@
 	<header>
 		<div class="logo-container">
 			<a href="../../index.php">
-				<img src="../../images/logo.png" />
+				<img src="../../images/logo-new.png" />
 				<h1><?php echo "InfoHub" ?></h1>
 			</a>
 		</div>
+
+        <a class="get-started-btn" href="../../main.php">Get started <i class="fas fa-angle-right"></i></a>
 	</header>
 
 	<div class="page-main">
@@ -65,7 +67,10 @@
 
 	</div>
 
-	<?php include $_SERVER['DOCUMENT_ROOT']."/infohub/footer.php"; ?>
+    <footer>
+        <img src="../../images/footer-bg.png" alt="" />
+        <p class="copyright"><?php echo "Copyright Hackathon 2018 | All rights reserved." ?> </p>
+    </footer>
 </body>
 
 </body>

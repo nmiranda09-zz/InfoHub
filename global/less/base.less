@@ -6,7 +6,6 @@
 
 html {
 	height: 100%;
-
     //  Font Varient
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
@@ -98,4 +97,24 @@ h4,
 h5,
 h6 {
     font-weight: normal;
+}
+
+.get-started-btn {
+    .round-borders(8px);
+    border-radius: 8px;
+    display: inline-block;
+    background: #283142;
+    padding: 15px 25px;
+    color: @white;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: lighten(@cobalt, 5%);
+    }
+
+    fa:before {
+      vertical-align: middle;
+    }
 }

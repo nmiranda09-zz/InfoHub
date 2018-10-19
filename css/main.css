@@ -1,3 +1,18 @@
+.chat-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-width: 100px;
+  margin: 0 10px 10px 0;
+  z-index: 1;
+}
+.chat-container a {
+  display: inline-block;
+  max-width: 70px;
+}
+.chat-container a img {
+  width: 100%;
+}
 .homepage-inner {
   display: -webkit-box;
   display: -moz-box;
@@ -31,24 +46,8 @@
 .info-container span:first-of-type {
   margin-bottom: 5px;
 }
-.info-container > a {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  display: inline-block;
-  background: #283142;
-  padding: 15px 25px;
-  margin-top: 25px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-.info-container > a:hover {
-  background: #323d52;
-}
-.info-container > a fa:before {
-  vertical-align: middle;
+.info-container .get-started-btn {
+  margin-top: 30px;
 }
 .image-container {
   width: 100%;
@@ -56,4 +55,60 @@
 }
 .image-container img {
   width: 100%;
+}
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.main-page .page-main {
+  padding-top: 150px;
+}
+.main-info-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  margin: 20px 20px 0;
+  background: #fff;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  padding: 20px 15px;
+}
+.main-info-container .company-logo {
+  max-width: 150px;
+  margin-right: 20px;
+}
+.main-info-container .company-logo img {
+  width: 100%;
+}
+.main-info-container .information-block a {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'roboto_condensedbold';
+  text-decoration: none;
+  color: #212121;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.main-info-container .information-block a:hover {
+  color: #ff191b;
+}
+.main-info-container .information-block p {
+  font-size: 20px;
+  font-family: 'roboto_condensedlight';
+  line-height: 1.2;
+}
+.announcement-container {
+  margin: 20px 0;
+}
+.announcement-container h2 {
+  font-size: 30px;
+  margin-left: 20px;
+  padding: 25px 0;
 }

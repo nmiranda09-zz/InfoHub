@@ -1,7 +1,7 @@
 <header>
 	<div class="logo-container">
 		<a href="../infohub/index.php">
-			<img src="images/logo.png" />
+			<img src="images/logo-new.png" />
 			<h1><?php echo "InfoHub" ?></h1>
 		</a>
 	</div>

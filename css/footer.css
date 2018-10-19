@@ -1,9 +1,17 @@
 footer {
-  padding: 20px;
-  background: #212121;
+  position: relative;
+}
+footer img {
+  width: 100%;
 }
 footer p {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 20px;
   display: block;
   text-align: center;
+  width: 100%;
+  background: #212121;
+  opacity: 0.9;
   color: #fff;
 }
