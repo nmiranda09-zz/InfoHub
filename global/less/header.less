@@ -1,0 +1,43 @@
+@import "variable.less";
+
+header {
+	.flex-layout;
+	.flex-align(center);
+	.flex-justify-content(space-between);
+	padding: 20px;
+	background: @white;
+
+	.logo-container {
+		a {
+			.flex-layout();
+			.flex-align(center);
+			text-decoration: none;
+
+			img {
+				max-width: 50px;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		h1 {
+			color: @mine-shaft;
+			font-family: @font-family-base;
+			margin-left: 10px;
+		}
+	}
+
+	.account-container {
+		a {
+			color: @mine-shaft;
+			font-family: @font-family-base;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

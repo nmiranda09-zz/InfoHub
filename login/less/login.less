@@ -1,0 +1,96 @@
+@import "../../global/less/variable.less";
+
+.login-page {
+	.info-container {
+		span {
+			a {
+				font-family: @font-family-bold;
+				text-decoration: none;
+				color: @mine-shaft;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.login-container {
+		.absolute-center();
+		.flex-layout();
+		.flex-align(center);
+		.flex-justify-content(center);
+		padding: 30px;
+
+		.login-form {
+		    max-width: 400px;
+		    border-left: 1px solid #9d9f9f;
+		    padding-left: 30px;
+		    margin-left: 20px;
+
+		    legend {
+		    	display: inline-block;
+		    	margin-bottom: 10px;
+		    }
+
+		    h3 {
+		    	display: inline-block;
+		    	margin-bottom: 20px;
+		    	font-size: 20px;
+		    }
+
+			input {
+				.round-borders(8px);
+				display: block;
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 15px 12px;
+				border: 1px solid #9d9f9f;
+				font-family: @font-family-base;
+				font-size: 18px;
+				color: @mine-shaft;
+
+				&::-webkit-input-placeholder {
+					color: #9d9f9f;
+				  	font-family: @font-family-light;
+				}
+
+				&::-moz-placeholder {
+					color: #9d9f9f;
+				  	font-family: @font-family-light;
+				}
+
+				&:-ms-input-placeholder {
+					color: #9d9f9f;
+				  	font-family: @font-family-light;
+				}
+
+				&:-moz-placeholder {
+					color: #9d9f9f;
+				  	font-family: @font-family-light;
+				}
+				
+
+				&:focus {
+					outline: none;
+					border-color: @cobalt;
+				}
+
+				&.login-btn {
+					background: @cobalt;
+					margin-bottom: 0;
+					font-family: @font-family-bold;
+					font-size: 18px;
+					color: @white;
+				    text-transform: uppercase;
+				    letter-spacing: 1px;
+				    cursor: pointer;
+
+				    &:hover {
+				    	background: lighten(@cobalt, 5%);
+				    }
+				}
+			}
+		}
+	}
+}
