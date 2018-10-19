@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	
 	<title></title>
 </head>
 <body>
@@ -13,6 +16,10 @@
 		<input type="text" id="address" placeholder="address" required>
 		<input type="text" id="username" placeholder="username" required>
 		<input type="password" id="password" placeholder="password" required>
+		<select id="type">
+			<option>Private</option>
+			<option>Public</option>
+		</select>
 		<input type="submit" value="submit" name="">
 	</form>
 

@@ -1,3 +1,6 @@
+<?php 
+	include $_SERVER['DOCUMENT_ROOT']."/InfoHub/config/session.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -10,7 +10,9 @@ function userSignup(userData){
 		dataType: 'html',
 		success: function(result)
 		{
-			alert(result)
+			var loginResult = JSON.parse(result);
+			alert(loginResult[0]);
+			window.location = "../../index.php";
 		},
 		error: function()
 		{
@@ -30,8 +32,10 @@ function userSubmit() {
 		birthdate: $('#birthdate').val(),
 		address: $('#address').val(),
 		username: $('#username').val(),
-		password: $('#password').val()
+		password: $('#password').val(),
+		type: $('#type').val()
 	}
+
 
 	userSignup(userData)
 

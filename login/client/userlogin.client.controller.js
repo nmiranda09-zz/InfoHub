@@ -11,7 +11,14 @@ function userLogin(){
 		dataType: 'html',
 		success: function(result)
 		{
-			alert(result)
+			// alert(typeof(logi))
+			var loginResult = JSON.parse(result);
+			if(parseInt(loginResult[1]) == 1){
+				window.location = "../../index.php";
+			}
+			else{
+				alert(loginResult[0]);
+			}
 		},
 		error: function()
 		{
