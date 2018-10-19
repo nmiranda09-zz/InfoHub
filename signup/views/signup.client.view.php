@@ -12,12 +12,13 @@
 		<input type="date" id="birthdate" placeholder="birthdate" required>
 		<input type="text" id="address" placeholder="address" required>
 		<input type="text" id="username" placeholder="username" required>
-		<input type="text" id="password" placeholder="password" required>
+		<input type="password" id="password" placeholder="password" required>
 		<input type="submit" value="submit" name="">
 	</form>
 
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="../../global/libs/jquery.js"></script>
 <script type="text/javascript" src="../client/signup.client.controller.js"></script>
 </html>
