@@ -1,0 +1,47 @@
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+}
+header .logo-container a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  text-decoration: none;
+}
+header .logo-container a img {
+  max-width: 50px;
+}
+header .logo-container a:hover {
+  opacity: 0.8;
+}
+header .logo-container h1 {
+  color: #212121;
+  font-family: 'roboto_condensedregular';
+  margin-left: 10px;
+}
+header .account-container a {
+  color: #212121;
+  font-family: 'roboto_condensedregular';
+  text-decoration: none;
+}
+header .account-container a:hover {
+  text-decoration: underline;
+}

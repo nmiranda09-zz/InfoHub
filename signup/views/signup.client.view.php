@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<script type="text/javascript" src="../../global/libs/jquery.js"></script>
+	<script type="text/javascript" src="../client/signup.client.controller.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 </head>
 <body>
 
-	<form onsubmit="return userSubmit()">
-		<input type="text" id="firstname" placeholder="firstname" required>
-		<input type="text" id="lastname" placeholder="lastname" required>
-		<input type="text" id="middlename" placeholder="middlename" required>
-		<input type="date" id="birthdate" placeholder="birthdate" required>
-		<input type="text" id="address" placeholder="address" required>
-		<input type="text" id="username" placeholder="username" required>
-		<input type="password" id="password" placeholder="password" required>
-		<select id="type">
-			<option>Private</option>
-			<option>Public</option>
-		</select>
-		<input type="submit" value="submit" name="">
-	</form>
+<body class="signup-page">
+	<header>
+		<div class="logo-container">
+			<a href="../../index.php">
+				<img src="../../images/logo.png" />
+				<h1><?php echo "InfoHub" ?></h1>
+			</a>
+		</div>
+	</header>
 
+	<div class="page-main">
+		<div class="signup-container">
+			<div class="info-container">
+				<h2>Welcome to InfoHub!</h2>
+				<span>Already have an account?</span>
+				<span>Please login <a href="../../login/views/login.client.view.php"><?php echo "here." ?>
+				</a></span>
+			</div>
+
+			<form class="signup-form" onsubmit="return userSubmit()">
+				<h3>Create an account</h3>
+				<legend>Required Fields *</legend>
+				<div>
+					<input type="text" id="company-name" placeholder="Company Name *" required>
+					<input type="text" id="address" placeholder="Company Address *" required>
+				</div>
+
+				<select>
+				    <option value="" disabled selected>Select Sector *</option>
+				    <option value="hurr">Government</option>
+				    <option value="hurr">Private</option>
+				</select>
+				<!-- <input type="text" id="firstname" placeholder="firstname" required>
+				<input type="text" id="lastname" placeholder="lastname" required>
+				<input type="text" id="middlename" placeholder="middlename" required> -->
+				<!-- <input type="date" id="birthdate" placeholder="birthdate" required> -->
+
+				<legend>Upload a valid document that supports your company.</legend>
+				<input type="file" id="file" required>
+
+				<div>
+					<input type="text" id="username" placeholder="username" required>
+				<input type="password" id="password" placeholder="password" required>
+				</div>
+
+				<input class="signup-btn" type="submit" value="Sign Up" name="">
+			</form>
+		</div>
+
+	</div>
+
+	<?php include $_SERVER['DOCUMENT_ROOT']."/infohub/footer.php"; ?>
+</body>
 
 </body>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
-<script type="text/javascript" src="../../global/libs/jquery.js"></script>
-<script type="text/javascript" src="../client/signup.client.controller.js"></script>
 </html>

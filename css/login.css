@@ -1,0 +1,91 @@
+.login-page .info-container span a {
+  font-family: 'roboto_condensedbold';
+  text-decoration: none;
+  color: #212121;
+}
+.login-page .info-container span a:hover {
+  text-decoration: underline;
+}
+.login-page .login-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  padding: 30px;
+}
+.login-page .login-container .login-form {
+  max-width: 400px;
+  border-left: 1px solid #9d9f9f;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+.login-page .login-container .login-form legend {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.login-page .login-container .login-form h3 {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.login-page .login-container .login-form input {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 12px;
+  border: 1px solid #9d9f9f;
+  font-family: 'roboto_condensedregular';
+  font-size: 18px;
+  color: #212121;
+}
+.login-page .login-container .login-form input::-webkit-input-placeholder {
+  color: #9d9f9f;
+  font-family: 'roboto_condensedlight';
+}
+.login-page .login-container .login-form input::-moz-placeholder {
+  color: #9d9f9f;
+  font-family: 'roboto_condensedlight';
+}
+.login-page .login-container .login-form input:-ms-input-placeholder {
+  color: #9d9f9f;
+  font-family: 'roboto_condensedlight';
+}
+.login-page .login-container .login-form input:-moz-placeholder {
+  color: #9d9f9f;
+  font-family: 'roboto_condensedlight';
+}
+.login-page .login-container .login-form input:focus {
+  outline: none;
+  border-color: #283142;
+}
+.login-page .login-container .login-form input.login-btn {
+  background: #283142;
+  margin-bottom: 0;
+  font-family: 'roboto_condensedbold';
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.login-page .login-container .login-form input.login-btn:hover {
+  background: #323d52;
+}
