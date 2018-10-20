@@ -1,15 +1,32 @@
+<?php
+	include $_SERVER['DOCUMENT_ROOT']."/InfoHub/config/session.php";
+?>
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head>
 	<title>InfoHub</title>
+	<?php include "../infohub/meta.php" ?>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script data-require="angular-animate@1.2.11" data-semver="1.2.11" src="https://code.angularjs.org/1.2.11/angular-animate.min.js"></script>
-  	<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.min.js">
-	<script src="config/main.module.js"></script>
 </head>
-<body ng-controller="MainController as main">
-	<h1>Main page</h1>
-	<ng-view></ng-view>
+<body class="index-page">
+	<?php include "../infohub/header.php" ?>
+
+	<div class="page-main">
+		<div class="homepage-inner">
+			<div class="info-container">
+				<h2>Welcome to InfoHub!</h2>
+				<span>Your one stop access to all information within your city</span>
+				<span>and make live chat inquiries.</span>
+
+				<a class="get-started-btn" href="../infohub/main.php">Get started <i class="fas fa-angle-right"></i></a>
+			</div>
+
+			<div class="image-container">
+				<img src="images/image-bg.png" />
+			</div>
+		</div>
+	</div>
+
+	<?php include "../infohub/footer.php" ?>
 </body>
 </html>
