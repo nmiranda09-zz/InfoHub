@@ -44,6 +44,7 @@
 
 				</div>
 				<div class="convo-container {{conversation.from === 'agent' ? 'from-agent':''}}" ng-repeat="conversation in chat.activeConversation.conversationData">
+					<span class="fa fa-user {{conversation.from === 'agent' ? 'user-agent':'user-user'}}"></span>
 					<div class="talk-bubble tri-right {{conversation.from === 'agent' ? 'right':'left'}}-top ">
 					  <div class="talktext">
 					    <p ng-bind="conversation.msg"></p>
