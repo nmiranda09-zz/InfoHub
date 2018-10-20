@@ -13,6 +13,7 @@ body{
 	max-height: 100%;
 	display: grid;
 	grid-template-columns: 270px auto 300px;
+	padding-top: 108px;
 }
 
 .company-container{
