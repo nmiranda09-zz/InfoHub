@@ -1,0 +1,93 @@
+.page-main{
+	width: 100%;
+	display: flex;
+	height: 100%;
+	padding-top: 	152px;
+}
+.company-details, .company-feeds{
+	width: 50%;
+	height: 100%;
+}
+
+.company-details{
+	padding : 0 40px;
+}
+
+.company-details .primary-details{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	border-bottom: 	1px solid #ddd;
+}
+
+.company-details .primary-details .logo-section{
+	width: 80px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.company-details .primary-details .logo-section img{
+	width: 	60px;
+}
+
+.name-acro-section{
+	width: 	calc(100% - 150px);
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.company-feeds .post-area{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	border-bottom: 	1px solid #ddd;
+}
+
+.company-feeds .post-area textarea{
+	padding : 5px;
+	max-width: 317px;
+	width: calc(100% - 40px);
+	resize: none;
+	overflow-y: auto;
+	border-radius: 4px 0 0 4px;
+	border: 1px solid #eee;
+}
+
+.company-feeds .post-area button{
+	width: 54px;
+	height: 56px;
+	padding: 0 3px;
+	background: #0a5287;
+	border: 1px solid #0a5287;
+	border-radius: 0px 4px 4px 0px;
+    color: #fff;
+}
+
+.name-acro-section h3, .name-acro-section span{
+	display: 	block;	
+}
+
+.information-block a {
+
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'roboto_condensedbold';
+    text-decoration: none;
+    color: #212121;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+}
+
+.information-block p {
+
+    font-size: 17px;
+    font-family: 'roboto_condensedlight';
+    line-height: 1.2;
+
+}

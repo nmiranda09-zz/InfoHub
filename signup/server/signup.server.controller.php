@@ -4,14 +4,11 @@
 	include $_SERVER['DOCUMENT_ROOT']."/InfoHub/config/connection.php";
 
 	$action = $p["action"];
-	$firstname = $p["firstname"];
-	$lastname = $p["lastname"];
-	$middlename = $p["middlename"];
-	$birthdate = $p["birthdate"];
-	$address = $p["address"];
+	$company_name = $p["company_name"];
+	$company_address = $p["company_address"];
+	$sector = $p["sector"];
 	$username = $p["username"];
 	$password = $p["password"];
-	$type = $p["type"];
 
 
 
@@ -23,7 +20,7 @@
 		echo json_encode(array("Username Already Exist !", 0));
 	}
 	else{
-		$user_signup_sql = "INSERT into users values(0, '$firstname', '$lastname', '$middlename', '$birthdate' , '$address','$username', '$password', '$type' , '1')";
+		$user_signup_sql = "INSERT into users values(0, '$company_name', '$company_address', '$sector','$username', '$password', '1')";
 		$user_signup = mysql_query($user_signup_sql);		
 		echo json_encode(array("Account Added !", 1));
 	}

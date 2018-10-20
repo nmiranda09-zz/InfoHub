@@ -39,22 +39,22 @@
 				<h3>Create an account</h3>
 				<legend>Required Fields *</legend>
 				<div>
-					<input type="text" id="company-name" placeholder="Company Name *" required>
-					<input type="text" id="address" placeholder="Company Address *" required>
+					<input type="text" id="company_name" placeholder="Company Name *" required>
+					<input type="text" id="company_address" placeholder="Company Address *" required>
 				</div>
 
-				<select>
+				<select id="Sector">
 				    <option value="" disabled selected>Select Sector *</option>
-				    <option value="hurr">Government</option>
-				    <option value="hurr">Private</option>
+				    <option value="Government">Government</option>
+				    <option value="Private">Private</option>
 				</select>
 				<!-- <input type="text" id="firstname" placeholder="firstname" required>
 				<input type="text" id="lastname" placeholder="lastname" required>
 				<input type="text" id="middlename" placeholder="middlename" required> -->
 				<!-- <input type="date" id="birthdate" placeholder="birthdate" required> -->
 
-				<legend>Upload a valid document that supports your company.</legend>
-				<input type="file" id="file" required>
+				<legend style="display:none">Upload a valid document that supports your company.</legend>
+				<input style="display:none" type="file" id="file">
 
 				<div>
 					<input type="text" id="username" placeholder="username" required>

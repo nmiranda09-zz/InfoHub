@@ -10,9 +10,10 @@ function userSignup(userData){
 		dataType: 'html',
 		success: function(result)
 		{
-			var loginResult = JSON.parse(result);
-			alert(loginResult[0]);
-			window.location = "../../index.php";
+			alert(result)
+			// var loginResult = JSON.parse(result);
+			// alert(loginResult[0]);
+			// window.location = "../../index.php";
 		},
 		error: function()
 		{
@@ -24,16 +25,14 @@ function userSignup(userData){
 
 function userSubmit() {
 
+
 	var userData = {
 		action : "userSignup",
-		firstname: $('#firstname').val(),
-		lastname: $('#lastname').val(),
-		middlename: $('#middlename').val(),
-		birthdate: $('#birthdate').val(),
-		address: $('#address').val(),
+		company_name: $('#company_name').val(),
+		company_address: $('#company_address').val(),
+		sector: $('#sector').val(),
 		username: $('#username').val(),
-		password: $('#password').val(),
-		type: $('#type').val()
+		password: $('#password').val()
 	}
 
 

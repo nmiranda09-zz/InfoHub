@@ -27,8 +27,34 @@
 	<div class="page-main">
         <div class="announcement-container">
             <h2>Announcements</h2>
+			<?php 
+				include $_SERVER['DOCUMENT_ROOT']."/InfoHub/shortcuts.php";
+				include $_SERVER['DOCUMENT_ROOT']."/InfoHub/config/connection.php";
 
-            <div class="main-info-container">
+				$sql_post = "SELECT * from posts";
+				$query_post = mysql_query($sql_post);
+				while ($result = mysql_fetch_array($query_post)) {
+				
+				$idddd = $result["user"];
+
+				$user_sql = "SELECT * from users where id='$idddd'";
+				$user_query = mysql_query($user_sql);
+				$user_result = mysql_fetch_array($user_query);
+
+				?>
+		            <div class="main-info-container">
+		                <div class="company-logo">
+		                    <img src="images/company-placeholder-logo.png" alt="" />
+		                </div>
+
+		                <div class="information-block">
+		                    <a href="#" title="Show company profile"><?php echo $user_result["company_name"]?></a>
+		                    <p class="information"><?php echo $result["content"]?></p>
+		                </div>
+		            </div>
+				<?php					
+				}
+			?><!--             <div class="main-info-container">
                 <div class="company-logo">
                     <img src="images/company-placeholder-logo.png" alt="" />
                 </div>
@@ -49,8 +75,8 @@
                     <p class="information">This is a sample announcement.</p>
                 </div>
             </div>
-
-            <div class="main-info-container">
+ -->
+<!--             <div class="main-info-container">
                 <div class="company-logo">
                     <img src="images/company-placeholder-logo.png" alt="" />
                 </div>
@@ -60,7 +86,7 @@
                     <p class="information">This is a sample announcement.</p>
                 </div>
             </div>
-        </div>
+ -->        </div>
 
 
         <div class="chat-container">
