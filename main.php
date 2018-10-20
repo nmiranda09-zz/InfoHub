@@ -64,7 +64,7 @@
 
 
         <div class="chat-container">
-            <a href="../../chat/views/chat.client.view.html" title="Go to Live Chat"><img src="../infohub/images/chat-bot-bubble.png" alt="" /></a>
+            <a href="chat/views/chat.client.view.html" title="Go to Live Chat"><img src="../infohub/images/chat-bot-bubble.png" alt="" /></a>
         </div>
 	</div>
 
