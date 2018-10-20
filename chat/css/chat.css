@@ -16,6 +16,7 @@ body{
 }
 
 .company-container{
+	height: 100vh;
 	/*background: #2b2525;*/
 }
 
@@ -50,7 +51,10 @@ body{
 }
 
 .company-container .company-list{
-	display: grid;
+	/*display: grid;*/
+	overflow: auto;
+    height: 86%;
+    /*margin-bottom: 5px;*/
 }
 .company-container .company-list .item{
 	padding: 12px 20px;
@@ -125,7 +129,7 @@ body{
 
 .conversation-container .convo-body .convo-container{
 	position: 	relative;	
-	display: block;	
+	display: block;			
 	cursor: pointer;
 }
 
@@ -185,7 +189,8 @@ body{
 
 .main-chat-wrapper .bot-questions-container .bot-lines h3{
 	font-weight: 400!important;
-	color: #b1b9bb;
+	color: #5b626a;
+    margin-bottom: 15px;
 }
 
 .main-chat-wrapper .bot-questions-container .bot-lines p{
@@ -279,6 +284,10 @@ body{
 
 .empty-convo span{
 	display: block;
+}
+
+.empty-convo .header-text{
+	margin-top:15px;
 }
 
 .empty-convo .sub-text{
