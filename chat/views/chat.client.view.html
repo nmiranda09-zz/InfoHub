@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="MainChatApp">
+<head>
+	<title>InfoHub</title>
+
+	<link rel="stylesheet" href="../css/chat.css">
+	<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.min.css">
+
+	<script src="../../lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../lib/angular/angular.min.js"></script>
+	<script src="../client/main.chat.controller.js"></script>
+</head>
+<body ng-controller="MainChatController as chat">
+	<div class="main-chat-wrapper">
+		<div class="company-container">
+			<div class="search-box-container">
+			    <span class="fa fa-search"></span>
+				<input placeholder="Search company to chat with" type="text" ng-model="searchText"></input>
+			</div>
+			<div class="company-list">
+				<div class="item" id="company-{{company.id}}" ng-repeat="company in chat.companies | filter:searchText" ng-click="chat.openConversation(company.id)">
+					<span class="fa fa-building"></span>
+					<div>
+						<span class="company-name" ng-bind="company.acronym"></span>
+						<span class="small" ng-bind="company.name"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="conversation-container">
+			<div class="convo-head">
+				<div>
+					<span style="display: block" ng-bind="chat.activeConversation.comapnyAcronym || 'Acronym'"></span>
+					<small ng-bind="chat.activeConversation.comapnyName || 'Company Name'""></small>
+				</div>
+			</div>
+			<div class="convo-body">
+				<div class="empty-convo" ng-if="chat.activeConversation.conversationData.length === 0">
+					<span class="fa fa-weixin"></span>
+					<span class="header-text"><strong>No conversation yet.</strong></span>
+					<span class="sub-text">Send a message to start a conversation.</span>
+
+				</div>
+				<div class="convo-container {{conversation.from === 'agent' ? 'from-agent':''}}" ng-repeat="conversation in chat.activeConversation.conversationData">
+					<div class="talk-bubble tri-right {{conversation.from === 'agent' ? 'right':'left'}}-top ">
+					  <div class="talktext">
+					    <p ng-bind="conversation.msg"></p>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="convo-input-area">
+			    <span class="fa fa-file"></span>
+			    <span class="fa fa-paper-plane-o" ng-click="chat.sendMessage()"></span>
+			    <form ng-submit="chat.sendMessage()">
+				   <input type="text" placeholder="Type your message" name="" ng-model="chat.chatText"/>	
+				</form>
+			</div>
+		</div>
+		<div class="bot-questions-container">
+			<div class="image-container"><img src="../image/chat_bot_icon.png"/></div>
+			<div class="bot-lines">
+				<h3>Hi, i'm JunJun</h3>
+				<p>Ask me anything about this channel with the following questions listed below</p>
+			</div>
+			<div ng-click="chat.sendQuestion(questions)" ng-repeat="questions in chat.activeConversation.botQuestionData" class="questions-buble talk-bubble tri-right left-top">
+			  <div class="talktext">
+			    <p ng-bind="questions.question"></p>
+			  </div>
+			</div>
+		</div>
+		<!-- <span ng-bind="chat.sampleData"></span> -->
+	</div>
+</body>
+</html>
