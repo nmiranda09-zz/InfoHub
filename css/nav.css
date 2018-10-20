@@ -1,0 +1,40 @@
+nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  padding: 20px;
+  background: #ff191b;
+}
+nav ul li > a {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 12px;
+}
+nav ul li > a:hover {
+  background: #ff4c4e;
+}
+nav ul li > a:hover:after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ff4c4e transparent transparent transparent;
+  content: '';
+}

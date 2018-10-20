@@ -11,8 +11,24 @@
 	<script src="../../lib/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../../lib/angular/angular.min.js"></script>
 	<script src="../client/main.chat.controller.js"></script>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<script type="text/javascript" src="../../global/libs/jquery.js"></script>
+	<script type="text/javascript" src="../client/userlogin.client.controller.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="MainChatController as chat">
+	<header>
+		<div class="logo-container">
+			<a href="../../index.php">
+				<img src="../../images/logo-new.png"/>
+				<h1>InfoHub</h1>
+			</a>
+		</div>
+
+		<a class="back-btn" href="../../main.php">Back <i class="fa fa-angle-right"></i></a>
+	</header>
+
 	<div class="main-chat-wrapper">
 		<div class="company-container">
 			<div class="search-box-container">
@@ -56,7 +72,7 @@
 			    <span class="fa fa-file"></span>
 			    <span class="fa fa-paper-plane-o" ng-click="chat.sendMessage()"></span>
 			    <form ng-submit="chat.sendMessage()">
-				   <input type="text" placeholder="Type your message" name="" ng-model="chat.chatText"/>	
+				   <input type="text" placeholder="Type your message" name="" ng-model="chat.chatText"/>
 				</form>
 			</div>
 		</div>
@@ -74,5 +90,10 @@
 		</div>
 		<!-- <span ng-bind="chat.sampleData"></span> -->
 	</div>
+
+	<footer>
+		<img src="../../images/footer-bg.png" alt="" />
+		<p class="copyright">Copyright Hackathon 2018 | All rights reserved.</p>
+	</footer>
 </body>
 </html>
