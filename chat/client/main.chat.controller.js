@@ -19,7 +19,7 @@ angular.module("MainChatApp",[
 		
 		vm.companies = [{
 				id   : 'C0', 
-				name : 'Nattional Bureau of Investagation',
+				name : 'National Bureau of Investagation',
 				acronym : 'NBI',
 				conversationData : [{
 						from : 'user',
